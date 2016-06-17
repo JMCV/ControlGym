@@ -23,4 +23,8 @@
     Private Sub ProductoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProductoToolStripMenuItem.Click
         Call New FrmProducto() With {.MdiParent = Me, .StartPosition = 1}.Show()
     End Sub
+
+    Private Sub OSCARPUTOToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OSCARPUTOToolStripMenuItem.Click
+        MsgBox("oscar es bien puto")
+    End Sub
 End Class
