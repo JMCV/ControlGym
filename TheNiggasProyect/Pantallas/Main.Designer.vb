@@ -31,6 +31,7 @@ Partial Class Principal
         Me.BuscarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProveedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OSCARPUTOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -40,7 +41,6 @@ Partial Class Principal
         Me.ReporteNToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OSCARPUTOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuPrincipal.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -105,6 +105,12 @@ Partial Class Principal
         Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.ProductoToolStripMenuItem.Text = "Producto"
         '
+        'OSCARPUTOToolStripMenuItem
+        '
+        Me.OSCARPUTOToolStripMenuItem.Name = "OSCARPUTOToolStripMenuItem"
+        Me.OSCARPUTOToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.OSCARPUTOToolStripMenuItem.Text = "OSCAR PUTO"
+        '
         'InventarioToolStripMenuItem
         '
         Me.InventarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ComprasToolStripMenuItem})
@@ -162,12 +168,6 @@ Partial Class Principal
         Me.InformacionToolStripMenuItem.Name = "InformacionToolStripMenuItem"
         Me.InformacionToolStripMenuItem.Size = New System.Drawing.Size(164, 26)
         Me.InformacionToolStripMenuItem.Text = "Informacion"
-        '
-        'OSCARPUTOToolStripMenuItem
-        '
-        Me.OSCARPUTOToolStripMenuItem.Name = "OSCARPUTOToolStripMenuItem"
-        Me.OSCARPUTOToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
-        Me.OSCARPUTOToolStripMenuItem.Text = "OSCAR PUTO"
         '
         'Principal
         '

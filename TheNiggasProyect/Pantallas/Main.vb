@@ -27,4 +27,8 @@
     Private Sub OSCARPUTOToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OSCARPUTOToolStripMenuItem.Click
         MsgBox("oscar es bien puto")
     End Sub
+
+    Private Sub CatalogoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CatalogoToolStripMenuItem.Click
+
+    End Sub
 End Class
