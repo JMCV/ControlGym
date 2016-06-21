@@ -24,11 +24,7 @@
         Call New FrmProducto() With {.MdiParent = Me, .StartPosition = 1}.Show()
     End Sub
 
-    Private Sub OSCARPUTOToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OSCARPUTOToolStripMenuItem.Click
-        MsgBox("oscar es bien puto")
-    End Sub
-
-    Private Sub CatalogoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CatalogoToolStripMenuItem.Click
-
+    Private Sub ServicioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ServicioToolStripMenuItem.Click
+        Call New FrmCatalogoServicios() With {.MdiParent = Me, .StartPosition = 1}.Show()
     End Sub
 End Class
