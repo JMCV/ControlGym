@@ -31,7 +31,7 @@ Partial Class Principal
         Me.BuscarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProveedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OSCARPUTOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ServicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -69,7 +69,7 @@ Partial Class Principal
         '
         'CatalogoToolStripMenuItem
         '
-        Me.CatalogoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.ProveedorToolStripMenuItem, Me.ProductoToolStripMenuItem, Me.OSCARPUTOToolStripMenuItem})
+        Me.CatalogoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.ProveedorToolStripMenuItem, Me.ProductoToolStripMenuItem, Me.ServicioToolStripMenuItem})
         Me.CatalogoToolStripMenuItem.Name = "CatalogoToolStripMenuItem"
         Me.CatalogoToolStripMenuItem.Size = New System.Drawing.Size(88, 24)
         Me.CatalogoToolStripMenuItem.Text = "Catalogos"
@@ -105,11 +105,11 @@ Partial Class Principal
         Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.ProductoToolStripMenuItem.Text = "Producto"
         '
-        'OSCARPUTOToolStripMenuItem
+        'ServicioToolStripMenuItem
         '
-        Me.OSCARPUTOToolStripMenuItem.Name = "OSCARPUTOToolStripMenuItem"
-        Me.OSCARPUTOToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
-        Me.OSCARPUTOToolStripMenuItem.Text = "OSCAR PUTO"
+        Me.ServicioToolStripMenuItem.Name = "ServicioToolStripMenuItem"
+        Me.ServicioToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.ServicioToolStripMenuItem.Text = "Servicios"
         '
         'InventarioToolStripMenuItem
         '
@@ -206,5 +206,5 @@ Partial Class Principal
     Friend WithEvents InformacionToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProveedorToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProductoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents OSCARPUTOToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ServicioToolStripMenuItem As ToolStripMenuItem
 End Class

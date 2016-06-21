@@ -128,6 +128,12 @@
     <Compile Include="Pantallas\Catalogos\Proveedor\FrmProveedor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Pantallas\Catalogos\Servicios\FrmCatalogoServicios.Designer.vb">
+      <DependentUpon>FrmCatalogoServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Catalogos\Servicios\FrmCatalogoServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pantallas\Inventarios\Compras\compras.Designer.vb">
       <DependentUpon>compras.vb</DependentUpon>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Catalogos\Proveedor\FrmProveedor.resx">
       <DependentUpon>FrmProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Catalogos\Servicios\FrmCatalogoServicios.resx">
+      <DependentUpon>FrmCatalogoServicios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
