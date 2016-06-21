@@ -80,7 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Conexion.vb" />
-    <Compile Include="Modulos\GrFinger.vb" />
     <Compile Include="Modulos\Module1.vb" />
     <Compile Include="Pantallas\Catalogos\Cliente\FrmBusquedaCliente.Designer.vb">
       <DependentUpon>FrmBusquedaCliente.vb</DependentUpon>
@@ -110,12 +109,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Pantallas\Catalogos\Cliente\FrmHuellas.Designer.vb">
-      <DependentUpon>FrmHuellas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Pantallas\Catalogos\Cliente\FrmHuellas.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Pantallas\Catalogos\Producto\FrmProducto.designer.vb">
       <DependentUpon>FrmProducto.vb</DependentUpon>
     </Compile>
@@ -132,18 +125,6 @@
       <DependentUpon>compras.vb</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Inventarios\Compras\compras.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pantallas\Inventarios\Compras\prueba.Designer.vb">
-      <DependentUpon>prueba.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Pantallas\Inventarios\Compras\prueba.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pantallas\Inventarios\Compras\prueba2.Designer.vb">
-      <DependentUpon>prueba2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Pantallas\Inventarios\Compras\prueba2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantallas\Main.Designer.vb">
@@ -166,14 +147,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pantallas\Catalogos\Cliente\FrmHuellas.resx">
-      <DependentUpon>FrmHuellas.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Catalogos\Producto\FrmProducto.resx">
       <DependentUpon>FrmProducto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Catalogos\Proveedor\FrmProveedor.resx">
       <DependentUpon>FrmProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Inventarios\Compras\compras.resx">
+      <DependentUpon>compras.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
