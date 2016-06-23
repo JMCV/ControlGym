@@ -110,10 +110,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Pantallas\Catalogos\Cliente\FrmHuellas.Designer.vb">
-      <DependentUpon>FrmHuellas.vb</DependentUpon>
+    <Compile Include="Pantallas\Catalogos\Empleado\FrmCatalogoEmpleado.Designer.vb">
+      <DependentUpon>FrmCatalogoEmpleado.vb</DependentUpon>
     </Compile>
-    <Compile Include="Pantallas\Catalogos\Cliente\FrmHuellas.vb">
+    <Compile Include="Pantallas\Catalogos\Empleado\FrmCatalogoEmpleado.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantallas\Catalogos\Producto\FrmProducto.designer.vb">
@@ -172,8 +172,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pantallas\Catalogos\Cliente\FrmHuellas.resx">
-      <DependentUpon>FrmHuellas.vb</DependentUpon>
+    <EmbeddedResource Include="Pantallas\Catalogos\Empleado\FrmCatalogoEmpleado.resx">
+      <DependentUpon>FrmCatalogoEmpleado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Catalogos\Producto\FrmProducto.resx">
       <DependentUpon>FrmProducto.vb</DependentUpon>
