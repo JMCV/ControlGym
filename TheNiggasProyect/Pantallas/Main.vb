@@ -25,6 +25,10 @@
     End Sub
 
     Private Sub ServicioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ServicioToolStripMenuItem.Click
-        Call New FrmCatalogoServicios() With {.MdiParent = Me, .StartPosition = 1}.Show()
+        Call New FrmCatalogoEmpleado() With {.MdiParent = Me, .StartPosition = 1}.Show()
+    End Sub
+
+    Private Sub EmpleadoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmpleadoToolStripMenuItem.Click
+        Call New FrmCatalogoEmpleado() With {.MdiParent = Me, .StartPosition = 1}.Show()
     End Sub
 End Class

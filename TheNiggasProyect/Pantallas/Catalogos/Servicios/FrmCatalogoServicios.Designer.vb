@@ -55,6 +55,7 @@ Partial Class FrmCatalogoServicios
         '
         'TxtDescripcion
         '
+        Me.TxtDescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtDescripcion.Location = New System.Drawing.Point(14, 49)
         Me.TxtDescripcion.Multiline = True
         Me.TxtDescripcion.Name = "TxtDescripcion"
@@ -151,6 +152,7 @@ Partial Class FrmCatalogoServicios
         '
         'txtBusqueda
         '
+        Me.txtBusqueda.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtBusqueda.Location = New System.Drawing.Point(80, 35)
         Me.txtBusqueda.Name = "txtBusqueda"
         Me.txtBusqueda.Size = New System.Drawing.Size(564, 22)

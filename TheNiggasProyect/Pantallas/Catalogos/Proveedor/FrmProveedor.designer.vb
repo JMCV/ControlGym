@@ -62,7 +62,7 @@ Partial Class FrmProveedor
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(16, 251)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(915, 309)
@@ -80,8 +80,9 @@ Partial Class FrmProveedor
         '
         'TextBox1
         '
+        Me.TextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox1.Location = New System.Drawing.Point(100, 11)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(344, 22)
@@ -99,8 +100,9 @@ Partial Class FrmProveedor
         '
         'TextBox2
         '
+        Me.TextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox2.Location = New System.Drawing.Point(151, 52)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(204, 22)
@@ -108,8 +110,9 @@ Partial Class FrmProveedor
         '
         'TextBox3
         '
+        Me.TextBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox3.Location = New System.Drawing.Point(492, 50)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(204, 22)
@@ -137,8 +140,9 @@ Partial Class FrmProveedor
         '
         'TextBox4
         '
+        Me.TextBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox4.Location = New System.Drawing.Point(513, 11)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(161, 22)
@@ -159,7 +163,7 @@ Partial Class FrmProveedor
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"FISICA", "MORAL"})
         Me.ComboBox1.Location = New System.Drawing.Point(767, 11)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(145, 24)
         Me.ComboBox1.TabIndex = 10
@@ -177,8 +181,9 @@ Partial Class FrmProveedor
         '
         'TextBox5
         '
+        Me.TextBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox5.Location = New System.Drawing.Point(105, 97)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
         Me.TextBox5.Size = New System.Drawing.Size(132, 22)
@@ -196,8 +201,9 @@ Partial Class FrmProveedor
         '
         'TextBox6
         '
+        Me.TextBox6.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox6.Location = New System.Drawing.Point(403, 97)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(293, 22)
@@ -215,8 +221,9 @@ Partial Class FrmProveedor
         '
         'TextBox7
         '
+        Me.TextBox7.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox7.Location = New System.Drawing.Point(84, 143)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.ReadOnly = True
         Me.TextBox7.Size = New System.Drawing.Size(332, 22)
@@ -234,8 +241,9 @@ Partial Class FrmProveedor
         '
         'TextBox8
         '
+        Me.TextBox8.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox8.Location = New System.Drawing.Point(517, 143)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(196, 22)
@@ -253,8 +261,9 @@ Partial Class FrmProveedor
         '
         'TextBox9
         '
+        Me.TextBox9.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox9.Location = New System.Drawing.Point(779, 143)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.ReadOnly = True
         Me.TextBox9.Size = New System.Drawing.Size(113, 22)
@@ -272,8 +281,9 @@ Partial Class FrmProveedor
         '
         'TextBox10
         '
+        Me.TextBox10.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox10.Location = New System.Drawing.Point(97, 186)
-        Me.TextBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox10.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.ReadOnly = True
         Me.TextBox10.Size = New System.Drawing.Size(241, 22)
@@ -291,8 +301,9 @@ Partial Class FrmProveedor
         '
         'TextBox11
         '
+        Me.TextBox11.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox11.Location = New System.Drawing.Point(436, 185)
-        Me.TextBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.ReadOnly = True
         Me.TextBox11.Size = New System.Drawing.Size(277, 22)
@@ -301,7 +312,7 @@ Partial Class FrmProveedor
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(55, 567)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 28)
         Me.Button1.TabIndex = 25
@@ -311,7 +322,7 @@ Partial Class FrmProveedor
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(231, 567)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(100, 28)
         Me.Button2.TabIndex = 26
@@ -321,7 +332,7 @@ Partial Class FrmProveedor
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(405, 567)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(100, 28)
         Me.Button3.TabIndex = 27
@@ -331,7 +342,7 @@ Partial Class FrmProveedor
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(603, 566)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(100, 28)
         Me.Button4.TabIndex = 28
@@ -350,8 +361,9 @@ Partial Class FrmProveedor
         '
         'TextBox12
         '
+        Me.TextBox12.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBox12.Location = New System.Drawing.Point(559, 222)
-        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(371, 22)
         Me.TextBox12.TabIndex = 30
@@ -359,7 +371,7 @@ Partial Class FrmProveedor
         'Button5
         '
         Me.Button5.Location = New System.Drawing.Point(792, 566)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(100, 28)
         Me.Button5.TabIndex = 31
@@ -403,7 +415,7 @@ Partial Class FrmProveedor
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmProveedor"
         Me.Text = "Catálogo proveedor"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

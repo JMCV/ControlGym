@@ -28,17 +28,17 @@ Partial Class FrmProducto
         Me.bt_grabar = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TxtBusquedaProducto = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.txtminimo = New System.Windows.Forms.TextBox()
         Me.txtmaximo = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.txtunidad = New System.Windows.Forms.TextBox()
         Me.txtnombre = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TxtBusquedaProducto = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -71,6 +71,7 @@ Partial Class FrmProducto
         '
         'txtclave
         '
+        Me.txtclave.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtclave.Enabled = False
         Me.txtclave.Location = New System.Drawing.Point(662, 445)
         Me.txtclave.Margin = New System.Windows.Forms.Padding(4)
@@ -116,23 +117,47 @@ Partial Class FrmProducto
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Producto"
         '
-        'txtminimo
+        'TxtBusquedaProducto
         '
-        Me.txtminimo.Enabled = False
-        Me.txtminimo.Location = New System.Drawing.Point(303, 22)
-        Me.txtminimo.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtminimo.Name = "txtminimo"
-        Me.txtminimo.Size = New System.Drawing.Size(75, 22)
-        Me.txtminimo.TabIndex = 19
+        Me.TxtBusquedaProducto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TxtBusquedaProducto.Location = New System.Drawing.Point(156, 133)
+        Me.TxtBusquedaProducto.Margin = New System.Windows.Forms.Padding(4)
+        Me.TxtBusquedaProducto.Name = "TxtBusquedaProducto"
+        Me.TxtBusquedaProducto.Size = New System.Drawing.Size(705, 22)
+        Me.TxtBusquedaProducto.TabIndex = 22
         '
-        'txtmaximo
+        'Label5
         '
-        Me.txtmaximo.Enabled = False
-        Me.txtmaximo.Location = New System.Drawing.Point(157, 19)
-        Me.txtmaximo.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtmaximo.Name = "txtmaximo"
-        Me.txtmaximo.Size = New System.Drawing.Size(75, 22)
-        Me.txtmaximo.TabIndex = 18
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(43, 133)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(111, 17)
+        Me.Label5.TabIndex = 21
+        Me.Label5.Text = "Filtro Busqueda:"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Label1)
+        Me.GroupBox2.Controls.Add(Me.Label4)
+        Me.GroupBox2.Controls.Add(Me.txtminimo)
+        Me.GroupBox2.Controls.Add(Me.txtmaximo)
+        Me.GroupBox2.Location = New System.Drawing.Point(64, 57)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(399, 55)
+        Me.GroupBox2.TabIndex = 20
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Stock"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(240, 22)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(56, 17)
+        Me.Label1.TabIndex = 21
+        Me.Label1.Text = "Minimo:"
         '
         'Label4
         '
@@ -143,6 +168,26 @@ Partial Class FrmProducto
         Me.Label4.Size = New System.Drawing.Size(59, 17)
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "Maximo:"
+        '
+        'txtminimo
+        '
+        Me.txtminimo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtminimo.Enabled = False
+        Me.txtminimo.Location = New System.Drawing.Point(303, 22)
+        Me.txtminimo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtminimo.Name = "txtminimo"
+        Me.txtminimo.Size = New System.Drawing.Size(75, 22)
+        Me.txtminimo.TabIndex = 19
+        '
+        'txtmaximo
+        '
+        Me.txtmaximo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtmaximo.Enabled = False
+        Me.txtmaximo.Location = New System.Drawing.Point(157, 19)
+        Me.txtmaximo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtmaximo.Name = "txtmaximo"
+        Me.txtmaximo.Size = New System.Drawing.Size(75, 22)
+        Me.txtmaximo.TabIndex = 18
         '
         'txtunidad
         '
@@ -155,6 +200,7 @@ Partial Class FrmProducto
         '
         'txtnombre
         '
+        Me.txtnombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtnombre.Enabled = False
         Me.txtnombre.Location = New System.Drawing.Point(156, 28)
         Me.txtnombre.Margin = New System.Windows.Forms.Padding(4)
@@ -181,47 +227,6 @@ Partial Class FrmProducto
         Me.Label2.Size = New System.Drawing.Size(86, 17)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Descripcion:"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.Label1)
-        Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Controls.Add(Me.txtminimo)
-        Me.GroupBox2.Controls.Add(Me.txtmaximo)
-        Me.GroupBox2.Location = New System.Drawing.Point(64, 57)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(399, 55)
-        Me.GroupBox2.TabIndex = 20
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Stock"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(240, 22)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 17)
-        Me.Label1.TabIndex = 21
-        Me.Label1.Text = "Minimo:"
-        '
-        'TxtBusquedaProducto
-        '
-        Me.TxtBusquedaProducto.Location = New System.Drawing.Point(156, 133)
-        Me.TxtBusquedaProducto.Margin = New System.Windows.Forms.Padding(4)
-        Me.TxtBusquedaProducto.Name = "TxtBusquedaProducto"
-        Me.TxtBusquedaProducto.Size = New System.Drawing.Size(705, 22)
-        Me.TxtBusquedaProducto.TabIndex = 22
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(43, 133)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(111, 17)
-        Me.Label5.TabIndex = 21
-        Me.Label5.Text = "Filtro Busqueda:"
         '
         'FrmProducto
         '
