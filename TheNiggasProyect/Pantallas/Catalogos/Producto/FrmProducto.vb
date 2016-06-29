@@ -44,8 +44,8 @@
         Try
             If operacion = "NUEVO" Then
 
-                strQuery = "INSERT INTO producto (nombre,unidad,maximo,minimo) " &
-                    " VALUES('" & txtnombre.Text & "','" & txtunidad.Text & "'," & txtmaximo.Text & "," & txtminimo.Text & ")"
+                strQuery = "INSERT INTO producto (nombre,unidad,maximo,minimo,cantidad) " &
+                    " VALUES('" & txtnombre.Text & "','" & txtunidad.Text & "'," & txtmaximo.Text & "," & txtminimo.Text & ",0)"
 
                 conexionBd.InsertUpdateDelete(strQuery)
                 Call llenar()

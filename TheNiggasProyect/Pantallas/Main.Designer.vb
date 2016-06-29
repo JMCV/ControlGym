@@ -41,6 +41,7 @@ Partial Class Principal
         Me.ReporteNToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CatálogoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuPrincipal.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -121,7 +122,7 @@ Partial Class Principal
         '
         'ComprasToolStripMenuItem
         '
-        Me.ComprasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem1})
+        Me.ComprasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem1, Me.CatálogoToolStripMenuItem})
         Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
         Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ComprasToolStripMenuItem.Text = "Compras"
@@ -170,6 +171,12 @@ Partial Class Principal
         Me.InformacionToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.InformacionToolStripMenuItem.Text = "Informacion"
         '
+        'CatálogoToolStripMenuItem
+        '
+        Me.CatálogoToolStripMenuItem.Name = "CatálogoToolStripMenuItem"
+        Me.CatálogoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CatálogoToolStripMenuItem.Text = "Catálogo"
+        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -178,7 +185,7 @@ Partial Class Principal
         Me.Controls.Add(Me.MenuPrincipal)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuPrincipal
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "NIGGA'S GYM"
@@ -209,4 +216,5 @@ Partial Class Principal
     Friend WithEvents ProveedorToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProductoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OSCARPUTOToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CatálogoToolStripMenuItem As ToolStripMenuItem
 End Class

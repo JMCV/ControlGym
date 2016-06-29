@@ -127,6 +127,12 @@
     <Compile Include="Pantallas\Inventarios\Compras\compras.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Pantallas\Inventarios\Compras\consultaCompra.Designer.vb">
+      <DependentUpon>consultaCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Inventarios\Compras\consultaCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pantallas\Main.Designer.vb">
       <DependentUpon>Main.vb</DependentUpon>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Inventarios\Compras\compras.resx">
       <DependentUpon>compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Inventarios\Compras\consultaCompra.resx">
+      <DependentUpon>consultaCompra.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Main.resx">
       <DependentUpon>Main.vb</DependentUpon>

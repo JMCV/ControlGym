@@ -125,7 +125,6 @@ Public Class FrmProveedor
             Dim bandera As Integer = MessageBox.Show("¿Esta seguro?", "Confirmacion", MessageBoxButtons.YesNo)
             If bandera = 6 Then
                 conexionBd.InsertUpdateDelete(sql)
-                'Call prepararExecute(sql)
                 Call limpiarTextBox()
                 Call usoTextBox(True)
                 Call actualizarDataGrid("")
@@ -159,7 +158,6 @@ Public Class FrmProveedor
             Dim bandera As Integer = MessageBox.Show("¿Esta seguro?", "Confirmacion", MessageBoxButtons.YesNo)
             If bandera = 6 Then
                 conexionBd.InsertUpdateDelete(sql)
-                'Call prepararExecute(sql)
                 Call limpiarTextBox()
                 Call usoTextBox(True)
                 Call actualizarDataGrid("")
