@@ -116,7 +116,7 @@ Public Class Conexion
         End Set
     End Property
     Public Sub New()
-        Me.nombreBD = "controlgym"
+        Me.nombreBD = "nigga"
         Me.servidor = "localhost"
         Me.usuario = "root"
         Me.password = "root"
