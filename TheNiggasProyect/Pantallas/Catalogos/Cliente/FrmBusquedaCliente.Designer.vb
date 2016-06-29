@@ -77,6 +77,7 @@ Partial Class FrmBusquedaCliente
         '
         'TxtBusquedaNombre
         '
+        Me.TxtBusquedaNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtBusquedaNombre.Location = New System.Drawing.Point(160, 87)
         Me.TxtBusquedaNombre.Name = "TxtBusquedaNombre"
         Me.TxtBusquedaNombre.Size = New System.Drawing.Size(303, 22)
@@ -237,6 +238,7 @@ Partial Class FrmBusquedaCliente
         '
         'TxtEmail
         '
+        Me.TxtEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtEmail.Enabled = False
         Me.TxtEmail.Location = New System.Drawing.Point(148, 256)
         Me.TxtEmail.Name = "TxtEmail"
@@ -271,6 +273,7 @@ Partial Class FrmBusquedaCliente
         '
         'TxtDomicilio
         '
+        Me.TxtDomicilio.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtDomicilio.Enabled = False
         Me.TxtDomicilio.Location = New System.Drawing.Point(148, 166)
         Me.TxtDomicilio.Multiline = True
@@ -289,6 +292,7 @@ Partial Class FrmBusquedaCliente
         '
         'TxtApellidoMaterno
         '
+        Me.TxtApellidoMaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtApellidoMaterno.Enabled = False
         Me.TxtApellidoMaterno.Location = New System.Drawing.Point(148, 130)
         Me.TxtApellidoMaterno.Name = "TxtApellidoMaterno"
@@ -306,6 +310,7 @@ Partial Class FrmBusquedaCliente
         '
         'TxtApellidoPaterno
         '
+        Me.TxtApellidoPaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtApellidoPaterno.Enabled = False
         Me.TxtApellidoPaterno.Location = New System.Drawing.Point(148, 102)
         Me.TxtApellidoPaterno.Name = "TxtApellidoPaterno"
@@ -340,6 +345,7 @@ Partial Class FrmBusquedaCliente
         '
         'TxtNombre
         '
+        Me.TxtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtNombre.Enabled = False
         Me.TxtNombre.Location = New System.Drawing.Point(148, 74)
         Me.TxtNombre.Name = "TxtNombre"
