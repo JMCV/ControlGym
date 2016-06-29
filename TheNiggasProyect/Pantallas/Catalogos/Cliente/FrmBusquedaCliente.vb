@@ -152,7 +152,5 @@
         TxtId.Text = Nothing
     End Sub
 
-    Private Sub FrmBusquedaCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 End Class
