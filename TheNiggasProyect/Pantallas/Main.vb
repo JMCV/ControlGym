@@ -35,4 +35,8 @@
     Private Sub NuevoToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NuevoToolStripMenuItem1.Click
         Call New compras() With {.MdiParent = Me, .StartPosition = 1}.Show()
     End Sub
+
+    Private Sub CatálogoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CatálogoToolStripMenuItem.Click
+        Call New consultaCompra() With {.MdiParent = Me, .StartPosition = 1}.Show()
+    End Sub
 End Class

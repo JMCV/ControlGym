@@ -81,7 +81,7 @@ Partial Class Principal
         '
         Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.BuscarToolStripMenuItem})
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'NuevoToolStripMenuItem
@@ -99,25 +99,25 @@ Partial Class Principal
         'EmpleadoToolStripMenuItem
         '
         Me.EmpleadoToolStripMenuItem.Name = "EmpleadoToolStripMenuItem"
-        Me.EmpleadoToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.EmpleadoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.EmpleadoToolStripMenuItem.Text = "Empleado"
         '
         'ProveedorToolStripMenuItem
         '
         Me.ProveedorToolStripMenuItem.Name = "ProveedorToolStripMenuItem"
-        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ProveedorToolStripMenuItem.Text = "Proveedor"
         '
         'ProductoToolStripMenuItem
         '
         Me.ProductoToolStripMenuItem.Name = "ProductoToolStripMenuItem"
-        Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ProductoToolStripMenuItem.Text = "Producto"
         '
         'ServicioToolStripMenuItem
         '
         Me.ServicioToolStripMenuItem.Name = "ServicioToolStripMenuItem"
-        Me.ServicioToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.ServicioToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ServicioToolStripMenuItem.Text = "Servicios"
         '
         'InventarioToolStripMenuItem

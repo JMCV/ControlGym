@@ -77,8 +77,8 @@
             Dim observaciones As String = TextBox7.Text
 
             Dim sql As String = "insert into factura(folio,tipo_documento,fecha,subtotal,iva,total,
-observaciones,id_proveedor) values ('" & folio & "','" & tipo & "','" & fecha & "'," & subtotal & ",
-" & iva & "," & total & ",'" & observaciones & "'," & id_proveedor & ")"
+observaciones,id_proveedor,activo) values ('" & folio & "','" & tipo & "','" & fecha & "'," & subtotal & ",
+" & iva & "," & total & ",'" & observaciones & "'," & id_proveedor & ",1)"
 
             conexionBd.InsertUpdateDelete(sql)
 
@@ -86,8 +86,8 @@ observaciones,id_proveedor) values ('" & folio & "','" & tipo & "','" & fecha & 
             conexionBd.PropertyDataSet = conexionBd.GetData(sql)
             If conexionBd.PropertyTable.Rows.Count > 0 Then
                 Dim id_factura As Integer = conexionBd.PropertyTable.Rows(0).Item("id")
-                sql = "insert into entrada_salida(id_factura,tipo,fecha,subtotal,iva,descuento,total,observacion) 
-values(" & id_factura & ",'ENTRADA','" & fecha & "'," & subtotal & "," & iva & ",0," & total & ",'" & observaciones & "')"
+                sql = "insert into entrada_salida(id_factura,tipo,fecha,subtotal,iva,descuento,total,observacion,activo) 
+values(" & id_factura & ",'ENTRADA','" & fecha & "'," & subtotal & "," & iva & ",0," & total & ",'" & observaciones & "',1)"
                 conexionBd.InsertUpdateDelete(sql)
             End If
 
