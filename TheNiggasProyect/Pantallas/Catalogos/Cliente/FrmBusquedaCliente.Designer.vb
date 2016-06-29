@@ -62,41 +62,45 @@ Partial Class FrmBusquedaCliente
         'LblNumeroCliente
         '
         Me.LblNumeroCliente.AutoSize = True
-        Me.LblNumeroCliente.Location = New System.Drawing.Point(25, 52)
+        Me.LblNumeroCliente.Location = New System.Drawing.Point(19, 42)
+        Me.LblNumeroCliente.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblNumeroCliente.Name = "LblNumeroCliente"
-        Me.LblNumeroCliente.Size = New System.Drawing.Size(129, 17)
+        Me.LblNumeroCliente.Size = New System.Drawing.Size(97, 13)
         Me.LblNumeroCliente.TabIndex = 0
         Me.LblNumeroCliente.Text = "Numero de Cliente:"
         '
         'TxtBusquedaNumero
         '
-        Me.TxtBusquedaNumero.Location = New System.Drawing.Point(160, 52)
+        Me.TxtBusquedaNumero.Location = New System.Drawing.Point(120, 42)
+        Me.TxtBusquedaNumero.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtBusquedaNumero.Name = "TxtBusquedaNumero"
-        Me.TxtBusquedaNumero.Size = New System.Drawing.Size(145, 22)
+        Me.TxtBusquedaNumero.Size = New System.Drawing.Size(110, 20)
         Me.TxtBusquedaNumero.TabIndex = 1
         '
         'TxtBusquedaNombre
         '
-        Me.TxtBusquedaNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TxtBusquedaNombre.Location = New System.Drawing.Point(160, 87)
+        Me.TxtBusquedaNombre.Location = New System.Drawing.Point(120, 71)
+        Me.TxtBusquedaNombre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtBusquedaNombre.Name = "TxtBusquedaNombre"
-        Me.TxtBusquedaNombre.Size = New System.Drawing.Size(303, 22)
+        Me.TxtBusquedaNombre.Size = New System.Drawing.Size(228, 20)
         Me.TxtBusquedaNombre.TabIndex = 3
         '
         'LblNombreCliente
         '
         Me.LblNombreCliente.AutoSize = True
-        Me.LblNombreCliente.Location = New System.Drawing.Point(25, 87)
+        Me.LblNombreCliente.Location = New System.Drawing.Point(19, 71)
+        Me.LblNombreCliente.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LblNombreCliente.Name = "LblNombreCliente"
-        Me.LblNombreCliente.Size = New System.Drawing.Size(129, 17)
+        Me.LblNombreCliente.Size = New System.Drawing.Size(97, 13)
         Me.LblNombreCliente.TabIndex = 2
         Me.LblNombreCliente.Text = "Nombre de Cliente:"
         '
         'BtnBusqueda
         '
-        Me.BtnBusqueda.Location = New System.Drawing.Point(311, 52)
+        Me.BtnBusqueda.Location = New System.Drawing.Point(233, 42)
+        Me.BtnBusqueda.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnBusqueda.Name = "BtnBusqueda"
-        Me.BtnBusqueda.Size = New System.Drawing.Size(75, 23)
+        Me.BtnBusqueda.Size = New System.Drawing.Size(56, 19)
         Me.BtnBusqueda.TabIndex = 4
         Me.BtnBusqueda.Text = "Buscar"
         Me.BtnBusqueda.UseVisualStyleBackColor = True
@@ -109,9 +113,11 @@ Partial Class FrmBusquedaCliente
         Me.GboxFiltros.Controls.Add(Me.LblNumeroCliente)
         Me.GboxFiltros.Controls.Add(Me.TxtBusquedaNombre)
         Me.GboxFiltros.Controls.Add(Me.LblNombreCliente)
-        Me.GboxFiltros.Location = New System.Drawing.Point(21, 23)
+        Me.GboxFiltros.Location = New System.Drawing.Point(16, 19)
+        Me.GboxFiltros.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GboxFiltros.Name = "GboxFiltros"
-        Me.GboxFiltros.Size = New System.Drawing.Size(892, 152)
+        Me.GboxFiltros.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GboxFiltros.Size = New System.Drawing.Size(669, 124)
         Me.GboxFiltros.TabIndex = 5
         Me.GboxFiltros.TabStop = False
         Me.GboxFiltros.Text = "Filtros de Busqueda"
@@ -120,9 +126,11 @@ Partial Class FrmBusquedaCliente
         '
         Me.GboxAllClientes.Controls.Add(Me.ChkActivos)
         Me.GboxAllClientes.Controls.Add(Me.ChkInactivos)
-        Me.GboxAllClientes.Location = New System.Drawing.Point(638, 21)
+        Me.GboxAllClientes.Location = New System.Drawing.Point(478, 17)
+        Me.GboxAllClientes.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GboxAllClientes.Name = "GboxAllClientes"
-        Me.GboxAllClientes.Size = New System.Drawing.Size(155, 110)
+        Me.GboxAllClientes.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GboxAllClientes.Size = New System.Drawing.Size(116, 89)
         Me.GboxAllClientes.TabIndex = 7
         Me.GboxAllClientes.TabStop = False
         Me.GboxAllClientes.Text = "Todos los Clientes"
@@ -130,9 +138,10 @@ Partial Class FrmBusquedaCliente
         'ChkActivos
         '
         Me.ChkActivos.AutoSize = True
-        Me.ChkActivos.Location = New System.Drawing.Point(37, 35)
+        Me.ChkActivos.Location = New System.Drawing.Point(28, 28)
+        Me.ChkActivos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ChkActivos.Name = "ChkActivos"
-        Me.ChkActivos.Size = New System.Drawing.Size(75, 21)
+        Me.ChkActivos.Size = New System.Drawing.Size(61, 17)
         Me.ChkActivos.TabIndex = 6
         Me.ChkActivos.Text = "Activos"
         Me.ChkActivos.UseVisualStyleBackColor = True
@@ -140,9 +149,10 @@ Partial Class FrmBusquedaCliente
         'ChkInactivos
         '
         Me.ChkInactivos.AutoSize = True
-        Me.ChkInactivos.Location = New System.Drawing.Point(37, 66)
+        Me.ChkInactivos.Location = New System.Drawing.Point(28, 54)
+        Me.ChkInactivos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ChkInactivos.Name = "ChkInactivos"
-        Me.ChkInactivos.Size = New System.Drawing.Size(85, 21)
+        Me.ChkInactivos.Size = New System.Drawing.Size(69, 17)
         Me.ChkInactivos.TabIndex = 5
         Me.ChkInactivos.Text = "Inactivos"
         Me.ChkInactivos.UseVisualStyleBackColor = True
@@ -150,9 +160,11 @@ Partial Class FrmBusquedaCliente
         'GbData
         '
         Me.GbData.Controls.Add(Me.DtgvCliente)
-        Me.GbData.Location = New System.Drawing.Point(21, 181)
+        Me.GbData.Location = New System.Drawing.Point(16, 147)
+        Me.GbData.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GbData.Name = "GbData"
-        Me.GbData.Size = New System.Drawing.Size(892, 349)
+        Me.GbData.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GbData.Size = New System.Drawing.Size(669, 284)
         Me.GbData.TabIndex = 6
         Me.GbData.TabStop = False
         Me.GbData.Text = "Resultado"
@@ -164,10 +176,11 @@ Partial Class FrmBusquedaCliente
         Me.DtgvCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.DtgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DtgvCliente.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DtgvCliente.Location = New System.Drawing.Point(3, 18)
+        Me.DtgvCliente.Location = New System.Drawing.Point(2, 15)
+        Me.DtgvCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DtgvCliente.Name = "DtgvCliente"
         Me.DtgvCliente.RowTemplate.Height = 24
-        Me.DtgvCliente.Size = New System.Drawing.Size(886, 328)
+        Me.DtgvCliente.Size = New System.Drawing.Size(665, 267)
         Me.DtgvCliente.TabIndex = 0
         '
         'GboxEdicionCliente
@@ -189,9 +202,11 @@ Partial Class FrmBusquedaCliente
         Me.GboxEdicionCliente.Controls.Add(Me.Label1)
         Me.GboxEdicionCliente.Controls.Add(Me.Label2)
         Me.GboxEdicionCliente.Controls.Add(Me.TxtNombre)
-        Me.GboxEdicionCliente.Location = New System.Drawing.Point(919, 181)
+        Me.GboxEdicionCliente.Location = New System.Drawing.Point(689, 147)
+        Me.GboxEdicionCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GboxEdicionCliente.Name = "GboxEdicionCliente"
-        Me.GboxEdicionCliente.Size = New System.Drawing.Size(431, 349)
+        Me.GboxEdicionCliente.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GboxEdicionCliente.Size = New System.Drawing.Size(323, 284)
         Me.GboxEdicionCliente.TabIndex = 7
         Me.GboxEdicionCliente.TabStop = False
         Me.GboxEdicionCliente.Text = "Editar o Borrar"
@@ -200,9 +215,10 @@ Partial Class FrmBusquedaCliente
         '
         Me.ChkActivo.AutoSize = True
         Me.ChkActivo.Enabled = False
-        Me.ChkActivo.Location = New System.Drawing.Point(282, 35)
+        Me.ChkActivo.Location = New System.Drawing.Point(212, 28)
+        Me.ChkActivo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ChkActivo.Name = "ChkActivo"
-        Me.ChkActivo.Size = New System.Drawing.Size(84, 21)
+        Me.ChkActivo.Size = New System.Drawing.Size(68, 17)
         Me.ChkActivo.TabIndex = 8
         Me.ChkActivo.Text = "¿Activo?"
         Me.ChkActivo.UseVisualStyleBackColor = True
@@ -210,9 +226,10 @@ Partial Class FrmBusquedaCliente
         'BtnBorrar
         '
         Me.BtnBorrar.Enabled = False
-        Me.BtnBorrar.Location = New System.Drawing.Point(260, 300)
+        Me.BtnBorrar.Location = New System.Drawing.Point(195, 244)
+        Me.BtnBorrar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnBorrar.Name = "BtnBorrar"
-        Me.BtnBorrar.Size = New System.Drawing.Size(75, 23)
+        Me.BtnBorrar.Size = New System.Drawing.Size(56, 19)
         Me.BtnBorrar.TabIndex = 18
         Me.BtnBorrar.Text = "Eliminar"
         Me.BtnBorrar.UseVisualStyleBackColor = True
@@ -220,9 +237,10 @@ Partial Class FrmBusquedaCliente
         'BtnGuardar
         '
         Me.BtnGuardar.Enabled = False
-        Me.BtnGuardar.Location = New System.Drawing.Point(133, 300)
+        Me.BtnGuardar.Location = New System.Drawing.Point(100, 244)
+        Me.BtnGuardar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.BtnGuardar.Name = "BtnGuardar"
-        Me.BtnGuardar.Size = New System.Drawing.Size(75, 23)
+        Me.BtnGuardar.Size = New System.Drawing.Size(56, 19)
         Me.BtnGuardar.TabIndex = 8
         Me.BtnGuardar.Text = "Guardar"
         Me.BtnGuardar.UseVisualStyleBackColor = True
@@ -230,146 +248,157 @@ Partial Class FrmBusquedaCliente
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(96, 256)
+        Me.Label7.Location = New System.Drawing.Point(72, 208)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(46, 17)
+        Me.Label7.Size = New System.Drawing.Size(35, 13)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Email:"
         '
         'TxtEmail
         '
-        Me.TxtEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtEmail.Enabled = False
-        Me.TxtEmail.Location = New System.Drawing.Point(148, 256)
+        Me.TxtEmail.Location = New System.Drawing.Point(111, 208)
+        Me.TxtEmail.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtEmail.Name = "TxtEmail"
-        Me.TxtEmail.Size = New System.Drawing.Size(250, 22)
+        Me.TxtEmail.Size = New System.Drawing.Size(188, 20)
         Me.TxtEmail.TabIndex = 17
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(74, 223)
+        Me.Label6.Location = New System.Drawing.Point(56, 181)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(68, 17)
+        Me.Label6.Size = New System.Drawing.Size(52, 13)
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Telefono:"
         '
         'TxtTelefono
         '
         Me.TxtTelefono.Enabled = False
-        Me.TxtTelefono.Location = New System.Drawing.Point(148, 223)
+        Me.TxtTelefono.Location = New System.Drawing.Point(111, 181)
+        Me.TxtTelefono.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtTelefono.Name = "TxtTelefono"
-        Me.TxtTelefono.Size = New System.Drawing.Size(250, 22)
+        Me.TxtTelefono.Size = New System.Drawing.Size(188, 20)
         Me.TxtTelefono.TabIndex = 15
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(78, 166)
+        Me.Label5.Location = New System.Drawing.Point(58, 135)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(68, 17)
+        Me.Label5.Size = New System.Drawing.Size(52, 13)
         Me.Label5.TabIndex = 12
         Me.Label5.Text = "Domicilio:"
         '
         'TxtDomicilio
         '
-        Me.TxtDomicilio.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtDomicilio.Enabled = False
-        Me.TxtDomicilio.Location = New System.Drawing.Point(148, 166)
+        Me.TxtDomicilio.Location = New System.Drawing.Point(111, 135)
+        Me.TxtDomicilio.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtDomicilio.Multiline = True
         Me.TxtDomicilio.Name = "TxtDomicilio"
-        Me.TxtDomicilio.Size = New System.Drawing.Size(250, 50)
+        Me.TxtDomicilio.Size = New System.Drawing.Size(188, 41)
         Me.TxtDomicilio.TabIndex = 13
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(24, 130)
+        Me.Label4.Location = New System.Drawing.Point(18, 106)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(118, 17)
+        Me.Label4.Size = New System.Drawing.Size(89, 13)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Apellido Materno:"
         '
         'TxtApellidoMaterno
         '
-        Me.TxtApellidoMaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtApellidoMaterno.Enabled = False
-        Me.TxtApellidoMaterno.Location = New System.Drawing.Point(148, 130)
+        Me.TxtApellidoMaterno.Location = New System.Drawing.Point(111, 106)
+        Me.TxtApellidoMaterno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtApellidoMaterno.Name = "TxtApellidoMaterno"
-        Me.TxtApellidoMaterno.Size = New System.Drawing.Size(250, 22)
+        Me.TxtApellidoMaterno.Size = New System.Drawing.Size(188, 20)
         Me.TxtApellidoMaterno.TabIndex = 11
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(26, 102)
+        Me.Label3.Location = New System.Drawing.Point(20, 83)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(116, 17)
+        Me.Label3.Size = New System.Drawing.Size(87, 13)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Apellido Paterno:"
         '
         'TxtApellidoPaterno
         '
-        Me.TxtApellidoPaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtApellidoPaterno.Enabled = False
-        Me.TxtApellidoPaterno.Location = New System.Drawing.Point(148, 102)
+        Me.TxtApellidoPaterno.Location = New System.Drawing.Point(111, 83)
+        Me.TxtApellidoPaterno.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtApellidoPaterno.Name = "TxtApellidoPaterno"
-        Me.TxtApellidoPaterno.Size = New System.Drawing.Size(250, 22)
+        Me.TxtApellidoPaterno.Size = New System.Drawing.Size(188, 20)
         Me.TxtApellidoPaterno.TabIndex = 9
         '
         'TxtNumeroCliente
         '
         Me.TxtNumeroCliente.Enabled = False
-        Me.TxtNumeroCliente.Location = New System.Drawing.Point(148, 39)
+        Me.TxtNumeroCliente.Location = New System.Drawing.Point(111, 32)
+        Me.TxtNumeroCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtNumeroCliente.Name = "TxtNumeroCliente"
-        Me.TxtNumeroCliente.Size = New System.Drawing.Size(87, 22)
+        Me.TxtNumeroCliente.Size = New System.Drawing.Size(66, 20)
         Me.TxtNumeroCliente.TabIndex = 5
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(61, 39)
+        Me.Label1.Location = New System.Drawing.Point(46, 32)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(81, 17)
+        Me.Label1.Size = New System.Drawing.Size(62, 13)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "No. Cliente:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 74)
+        Me.Label2.Location = New System.Drawing.Point(10, 60)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(129, 17)
+        Me.Label2.Size = New System.Drawing.Size(97, 13)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Nombre de Cliente:"
         '
         'TxtNombre
         '
-        Me.TxtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtNombre.Enabled = False
-        Me.TxtNombre.Location = New System.Drawing.Point(148, 74)
+        Me.TxtNombre.Location = New System.Drawing.Point(111, 60)
+        Me.TxtNombre.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(250, 22)
+        Me.TxtNombre.Size = New System.Drawing.Size(188, 20)
         Me.TxtNombre.TabIndex = 7
         '
         'TxtId
         '
-        Me.TxtId.Location = New System.Drawing.Point(1083, 72)
+        Me.TxtId.Location = New System.Drawing.Point(812, 58)
+        Me.TxtId.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TxtId.Name = "TxtId"
-        Me.TxtId.Size = New System.Drawing.Size(150, 22)
+        Me.TxtId.Size = New System.Drawing.Size(114, 20)
         Me.TxtId.TabIndex = 19
         Me.TxtId.Visible = False
         '
         'FrmBusquedaCliente
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1362, 563)
+        Me.ClientSize = New System.Drawing.Size(963, 457)
         Me.Controls.Add(Me.GboxEdicionCliente)
         Me.Controls.Add(Me.TxtId)
         Me.Controls.Add(Me.GbData)
         Me.Controls.Add(Me.GboxFiltros)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FrmBusquedaCliente"
         Me.Text = "Buscar Cliente"
         Me.GboxFiltros.ResumeLayout(False)
