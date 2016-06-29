@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Principal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Principal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuPrincipal = New System.Windows.Forms.MenuStrip()
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -29,19 +29,20 @@ Partial Class Principal
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BuscarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProveedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OSCARPUTOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ServicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CatálogoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Reporte1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Reporte2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReporteNToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CatálogoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuPrincipal.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -71,7 +72,7 @@ Partial Class Principal
         '
         'CatalogoToolStripMenuItem
         '
-        Me.CatalogoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.ProveedorToolStripMenuItem, Me.ProductoToolStripMenuItem, Me.OSCARPUTOToolStripMenuItem})
+        Me.CatalogoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClientesToolStripMenuItem, Me.EmpleadoToolStripMenuItem, Me.ProveedorToolStripMenuItem, Me.ProductoToolStripMenuItem, Me.ServicioToolStripMenuItem})
         Me.CatalogoToolStripMenuItem.Name = "CatalogoToolStripMenuItem"
         Me.CatalogoToolStripMenuItem.Size = New System.Drawing.Size(72, 20)
         Me.CatalogoToolStripMenuItem.Text = "Catalogos"
@@ -80,7 +81,7 @@ Partial Class Principal
         '
         Me.ClientesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripMenuItem, Me.BuscarToolStripMenuItem})
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'NuevoToolStripMenuItem
@@ -95,23 +96,29 @@ Partial Class Principal
         Me.BuscarToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.BuscarToolStripMenuItem.Text = "Buscar"
         '
+        'EmpleadoToolStripMenuItem
+        '
+        Me.EmpleadoToolStripMenuItem.Name = "EmpleadoToolStripMenuItem"
+        Me.EmpleadoToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.EmpleadoToolStripMenuItem.Text = "Empleado"
+        '
         'ProveedorToolStripMenuItem
         '
         Me.ProveedorToolStripMenuItem.Name = "ProveedorToolStripMenuItem"
-        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.ProveedorToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
         Me.ProveedorToolStripMenuItem.Text = "Proveedor"
         '
         'ProductoToolStripMenuItem
         '
         Me.ProductoToolStripMenuItem.Name = "ProductoToolStripMenuItem"
-        Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.ProductoToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
         Me.ProductoToolStripMenuItem.Text = "Producto"
         '
-        'OSCARPUTOToolStripMenuItem
+        'ServicioToolStripMenuItem
         '
-        Me.OSCARPUTOToolStripMenuItem.Name = "OSCARPUTOToolStripMenuItem"
-        Me.OSCARPUTOToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
-        Me.OSCARPUTOToolStripMenuItem.Text = "OSCAR PUTO"
+        Me.ServicioToolStripMenuItem.Name = "ServicioToolStripMenuItem"
+        Me.ServicioToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.ServicioToolStripMenuItem.Text = "Servicios"
         '
         'InventarioToolStripMenuItem
         '
@@ -132,6 +139,12 @@ Partial Class Principal
         Me.NuevoToolStripMenuItem1.Name = "NuevoToolStripMenuItem1"
         Me.NuevoToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.NuevoToolStripMenuItem1.Text = "Nuevo"
+        '
+        'CatálogoToolStripMenuItem
+        '
+        Me.CatálogoToolStripMenuItem.Name = "CatálogoToolStripMenuItem"
+        Me.CatálogoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CatálogoToolStripMenuItem.Text = "Catálogo"
         '
         'ReportesToolStripMenuItem
         '
@@ -171,12 +184,6 @@ Partial Class Principal
         Me.InformacionToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.InformacionToolStripMenuItem.Text = "Informacion"
         '
-        'CatálogoToolStripMenuItem
-        '
-        Me.CatálogoToolStripMenuItem.Name = "CatálogoToolStripMenuItem"
-        Me.CatálogoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.CatálogoToolStripMenuItem.Text = "Catálogo"
-        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -215,6 +222,7 @@ Partial Class Principal
     Friend WithEvents InformacionToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProveedorToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProductoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents OSCARPUTOToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CatálogoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ServicioToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EmpleadoToolStripMenuItem As ToolStripMenuItem
 End Class

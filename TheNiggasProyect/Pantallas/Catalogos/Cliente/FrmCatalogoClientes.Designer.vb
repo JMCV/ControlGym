@@ -53,6 +53,7 @@ Partial Class FrmCatalogoClientes
         '
         'TxtNombre
         '
+        Me.TxtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtNombre.Location = New System.Drawing.Point(143, 42)
         Me.TxtNombre.Name = "TxtNombre"
         Me.TxtNombre.Size = New System.Drawing.Size(206, 22)
@@ -60,6 +61,7 @@ Partial Class FrmCatalogoClientes
         '
         'TxtApellidoPaterno
         '
+        Me.TxtApellidoPaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtApellidoPaterno.Location = New System.Drawing.Point(143, 80)
         Me.TxtApellidoPaterno.Name = "TxtApellidoPaterno"
         Me.TxtApellidoPaterno.Size = New System.Drawing.Size(206, 22)
@@ -76,6 +78,7 @@ Partial Class FrmCatalogoClientes
         '
         'TxtApellidoMaterno
         '
+        Me.TxtApellidoMaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtApellidoMaterno.Location = New System.Drawing.Point(143, 112)
         Me.TxtApellidoMaterno.Name = "TxtApellidoMaterno"
         Me.TxtApellidoMaterno.Size = New System.Drawing.Size(206, 22)
@@ -92,6 +95,7 @@ Partial Class FrmCatalogoClientes
         '
         'TxtTelefono
         '
+        Me.TxtTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtTelefono.Location = New System.Drawing.Point(143, 150)
         Me.TxtTelefono.Name = "TxtTelefono"
         Me.TxtTelefono.Size = New System.Drawing.Size(206, 22)
@@ -108,6 +112,7 @@ Partial Class FrmCatalogoClientes
         '
         'TxtEmail
         '
+        Me.TxtEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtEmail.Location = New System.Drawing.Point(143, 178)
         Me.TxtEmail.Name = "TxtEmail"
         Me.TxtEmail.Size = New System.Drawing.Size(206, 22)
@@ -124,6 +129,7 @@ Partial Class FrmCatalogoClientes
         '
         'TxtDomicilio
         '
+        Me.TxtDomicilio.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtDomicilio.Location = New System.Drawing.Point(143, 209)
         Me.TxtDomicilio.Name = "TxtDomicilio"
         Me.TxtDomicilio.Size = New System.Drawing.Size(206, 22)

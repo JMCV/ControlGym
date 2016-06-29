@@ -109,6 +109,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Pantallas\Catalogos\Empleado\FrmCatalogoEmpleado.Designer.vb">
+      <DependentUpon>FrmCatalogoEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Catalogos\Empleado\FrmCatalogoEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pantallas\Catalogos\Producto\FrmProducto.designer.vb">
       <DependentUpon>FrmProducto.vb</DependentUpon>
     </Compile>
@@ -119,6 +125,12 @@
       <DependentUpon>FrmProveedor.vb</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Catalogos\Proveedor\FrmProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Catalogos\Servicios\FrmCatalogoServicios.Designer.vb">
+      <DependentUpon>FrmCatalogoServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Catalogos\Servicios\FrmCatalogoServicios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantallas\Inventarios\Compras\compras.Designer.vb">
@@ -153,6 +165,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Catalogos\Empleado\FrmCatalogoEmpleado.resx">
+      <DependentUpon>FrmCatalogoEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Catalogos\Producto\FrmProducto.resx">
       <DependentUpon>FrmProducto.vb</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Inventarios\Compras\consultaCompra.resx">
       <DependentUpon>consultaCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Catalogos\Servicios\FrmCatalogoServicios.resx">
+      <DependentUpon>FrmCatalogoServicios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
