@@ -46,10 +46,9 @@ Partial Class FrmProducto
         '
         'bt_nuevo
         '
-        Me.bt_nuevo.Location = New System.Drawing.Point(16, 442)
-        Me.bt_nuevo.Margin = New System.Windows.Forms.Padding(4)
+        Me.bt_nuevo.Location = New System.Drawing.Point(12, 383)
         Me.bt_nuevo.Name = "bt_nuevo"
-        Me.bt_nuevo.Size = New System.Drawing.Size(100, 28)
+        Me.bt_nuevo.Size = New System.Drawing.Size(75, 23)
         Me.bt_nuevo.TabIndex = 0
         Me.bt_nuevo.Text = "Nuevo"
         Me.bt_nuevo.UseVisualStyleBackColor = True
@@ -62,41 +61,37 @@ Partial Class FrmProducto
         Me.dgv1.AllowUserToResizeColumns = False
         Me.dgv1.AllowUserToResizeRows = False
         Me.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv1.Location = New System.Drawing.Point(16, 190)
-        Me.dgv1.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgv1.Location = New System.Drawing.Point(12, 180)
         Me.dgv1.Name = "dgv1"
         Me.dgv1.ReadOnly = True
-        Me.dgv1.Size = New System.Drawing.Size(877, 236)
+        Me.dgv1.Size = New System.Drawing.Size(658, 192)
         Me.dgv1.TabIndex = 1
         '
         'txtclave
         '
         Me.txtclave.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtclave.Enabled = False
-        Me.txtclave.Location = New System.Drawing.Point(662, 445)
-        Me.txtclave.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtclave.Location = New System.Drawing.Point(496, 386)
         Me.txtclave.Name = "txtclave"
-        Me.txtclave.Size = New System.Drawing.Size(231, 22)
+        Me.txtclave.Size = New System.Drawing.Size(174, 20)
         Me.txtclave.TabIndex = 5
         Me.txtclave.Visible = False
         '
         'bt_grabar
         '
         Me.bt_grabar.Enabled = False
-        Me.bt_grabar.Location = New System.Drawing.Point(124, 442)
-        Me.bt_grabar.Margin = New System.Windows.Forms.Padding(4)
+        Me.bt_grabar.Location = New System.Drawing.Point(93, 383)
         Me.bt_grabar.Name = "bt_grabar"
-        Me.bt_grabar.Size = New System.Drawing.Size(100, 28)
+        Me.bt_grabar.Size = New System.Drawing.Size(75, 23)
         Me.bt_grabar.TabIndex = 10
         Me.bt_grabar.Text = "Grabar"
         Me.bt_grabar.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(232, 442)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(174, 383)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(123, 26)
+        Me.Button1.Size = New System.Drawing.Size(92, 21)
         Me.Button1.TabIndex = 11
         Me.Button1.Text = "Borrar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -110,9 +105,11 @@ Partial Class FrmProducto
         Me.GroupBox1.Controls.Add(Me.txtnombre)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(16, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 10)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(877, 171)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
+        Me.GroupBox1.Size = New System.Drawing.Size(658, 158)
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Producto"
@@ -123,7 +120,7 @@ Partial Class FrmProducto
         Me.TxtBusquedaProducto.Location = New System.Drawing.Point(156, 133)
         Me.TxtBusquedaProducto.Margin = New System.Windows.Forms.Padding(4)
         Me.TxtBusquedaProducto.Name = "TxtBusquedaProducto"
-        Me.TxtBusquedaProducto.Size = New System.Drawing.Size(705, 22)
+        Me.TxtBusquedaProducto.Size = New System.Drawing.Size(705, 20)
         Me.TxtBusquedaProducto.TabIndex = 22
         '
         'Label5
@@ -132,7 +129,7 @@ Partial Class FrmProducto
         Me.Label5.Location = New System.Drawing.Point(43, 133)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(111, 17)
+        Me.Label5.Size = New System.Drawing.Size(83, 13)
         Me.Label5.TabIndex = 21
         Me.Label5.Text = "Filtro Busqueda:"
         '
@@ -152,20 +149,20 @@ Partial Class FrmProducto
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(240, 22)
+        Me.Label1.Location = New System.Drawing.Point(207, 22)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 17)
+        Me.Label1.Size = New System.Drawing.Size(43, 13)
         Me.Label1.TabIndex = 21
         Me.Label1.Text = "Minimo:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(94, 22)
+        Me.Label4.Location = New System.Drawing.Point(64, 22)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 17)
+        Me.Label4.Size = New System.Drawing.Size(46, 13)
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "Maximo:"
         '
@@ -173,73 +170,66 @@ Partial Class FrmProducto
         '
         Me.txtminimo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtminimo.Enabled = False
-        Me.txtminimo.Location = New System.Drawing.Point(303, 22)
-        Me.txtminimo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtminimo.Location = New System.Drawing.Point(255, 17)
         Me.txtminimo.Name = "txtminimo"
-        Me.txtminimo.Size = New System.Drawing.Size(75, 22)
+        Me.txtminimo.Size = New System.Drawing.Size(57, 20)
         Me.txtminimo.TabIndex = 19
         '
         'txtmaximo
         '
         Me.txtmaximo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtmaximo.Enabled = False
-        Me.txtmaximo.Location = New System.Drawing.Point(157, 19)
-        Me.txtmaximo.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtmaximo.Location = New System.Drawing.Point(114, 18)
         Me.txtmaximo.Name = "txtmaximo"
-        Me.txtmaximo.Size = New System.Drawing.Size(75, 22)
+        Me.txtmaximo.Size = New System.Drawing.Size(57, 20)
         Me.txtmaximo.TabIndex = 18
         '
         'txtunidad
         '
         Me.txtunidad.Enabled = False
-        Me.txtunidad.Location = New System.Drawing.Point(554, 27)
-        Me.txtunidad.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtunidad.Location = New System.Drawing.Point(416, 22)
         Me.txtunidad.Name = "txtunidad"
-        Me.txtunidad.Size = New System.Drawing.Size(123, 22)
+        Me.txtunidad.Size = New System.Drawing.Size(93, 20)
         Me.txtunidad.TabIndex = 16
         '
         'txtnombre
         '
         Me.txtnombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtnombre.Enabled = False
-        Me.txtnombre.Location = New System.Drawing.Point(156, 28)
-        Me.txtnombre.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtnombre.Location = New System.Drawing.Point(117, 23)
         Me.txtnombre.Name = "txtnombre"
-        Me.txtnombre.Size = New System.Drawing.Size(307, 22)
+        Me.txtnombre.Size = New System.Drawing.Size(231, 20)
         Me.txtnombre.TabIndex = 15
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(501, 28)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(376, 23)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(57, 17)
+        Me.Label3.Size = New System.Drawing.Size(44, 13)
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Unidad:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(61, 28)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(46, 23)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(86, 17)
+        Me.Label2.Size = New System.Drawing.Size(66, 13)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Descripcion:"
         '
         'FrmProducto
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(909, 485)
+        Me.ClientSize = New System.Drawing.Size(682, 430)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.bt_grabar)
         Me.Controls.Add(Me.txtclave)
         Me.Controls.Add(Me.dgv1)
         Me.Controls.Add(Me.bt_nuevo)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FrmProducto"
