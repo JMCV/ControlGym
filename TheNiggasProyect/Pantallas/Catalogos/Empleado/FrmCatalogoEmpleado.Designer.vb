@@ -23,6 +23,11 @@ Partial Class FrmCatalogoEmpleado
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GbEmpleado = New System.Windows.Forms.GroupBox()
+        Me.PbClienteNuevo = New System.Windows.Forms.PictureBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.ChkActivoEmpleado = New System.Windows.Forms.CheckBox()
         Me.TxtPuestoEmpleado = New System.Windows.Forms.TextBox()
         Me.TxtCorreoEmpleado = New System.Windows.Forms.TextBox()
@@ -45,17 +50,16 @@ Partial Class FrmCatalogoEmpleado
         Me.BtnNuevoEmpleado = New System.Windows.Forms.Button()
         Me.BtnGuardarEmpleado = New System.Windows.Forms.Button()
         Me.TxtIdEmpleado = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.OfdImagenesCliente = New System.Windows.Forms.OpenFileDialog()
         Me.GbEmpleado.SuspendLayout()
+        CType(Me.PbClienteNuevo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GbBusquedaEmpleado.SuspendLayout()
         CType(Me.DgvEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GbEmpleado
         '
+        Me.GbEmpleado.Controls.Add(Me.PbClienteNuevo)
         Me.GbEmpleado.Controls.Add(Me.TextBox2)
         Me.GbEmpleado.Controls.Add(Me.Label2)
         Me.GbEmpleado.Controls.Add(Me.TextBox1)
@@ -83,12 +87,58 @@ Partial Class FrmCatalogoEmpleado
         Me.GbEmpleado.TabStop = False
         Me.GbEmpleado.Text = "Nuevo Empleado"
         '
+        'PbClienteNuevo
+        '
+        Me.PbClienteNuevo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PbClienteNuevo.Location = New System.Drawing.Point(579, 12)
+        Me.PbClienteNuevo.Margin = New System.Windows.Forms.Padding(2)
+        Me.PbClienteNuevo.Name = "PbClienteNuevo"
+        Me.PbClienteNuevo.Size = New System.Drawing.Size(90, 110)
+        Me.PbClienteNuevo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PbClienteNuevo.TabIndex = 52
+        Me.PbClienteNuevo.TabStop = False
+        '
+        'TextBox2
+        '
+        Me.TextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBox2.Location = New System.Drawing.Point(406, 159)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox2.Size = New System.Drawing.Size(103, 20)
+        Me.TextBox2.TabIndex = 8
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(327, 164)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(56, 13)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Password:"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBox1.Location = New System.Drawing.Point(406, 130)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(103, 20)
+        Me.TextBox1.TabIndex = 7
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(339, 133)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(46, 13)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Usuario:"
+        '
         'ChkActivoEmpleado
         '
         Me.ChkActivoEmpleado.AutoSize = True
         Me.ChkActivoEmpleado.Location = New System.Drawing.Point(545, 148)
         Me.ChkActivoEmpleado.Name = "ChkActivoEmpleado"
-        Me.ChkActivoEmpleado.Size = New System.Drawing.Size(84, 21)
+        Me.ChkActivoEmpleado.Size = New System.Drawing.Size(68, 17)
         Me.ChkActivoEmpleado.TabIndex = 50
         Me.ChkActivoEmpleado.Text = "¿Activo?"
         Me.ChkActivoEmpleado.UseVisualStyleBackColor = True
@@ -98,7 +148,7 @@ Partial Class FrmCatalogoEmpleado
         Me.TxtPuestoEmpleado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtPuestoEmpleado.Location = New System.Drawing.Point(122, 137)
         Me.TxtPuestoEmpleado.Name = "TxtPuestoEmpleado"
-        Me.TxtPuestoEmpleado.Size = New System.Drawing.Size(150, 22)
+        Me.TxtPuestoEmpleado.Size = New System.Drawing.Size(150, 20)
         Me.TxtPuestoEmpleado.TabIndex = 7
         '
         'TxtCorreoEmpleado
@@ -106,7 +156,7 @@ Partial Class FrmCatalogoEmpleado
         Me.TxtCorreoEmpleado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtCorreoEmpleado.Location = New System.Drawing.Point(406, 102)
         Me.TxtCorreoEmpleado.Name = "TxtCorreoEmpleado"
-        Me.TxtCorreoEmpleado.Size = New System.Drawing.Size(263, 22)
+        Me.TxtCorreoEmpleado.Size = New System.Drawing.Size(263, 20)
         Me.TxtCorreoEmpleado.TabIndex = 6
         '
         'LblPuesto
@@ -114,16 +164,16 @@ Partial Class FrmCatalogoEmpleado
         Me.LblPuesto.AutoSize = True
         Me.LblPuesto.Location = New System.Drawing.Point(60, 137)
         Me.LblPuesto.Name = "LblPuesto"
-        Me.LblPuesto.Size = New System.Drawing.Size(56, 17)
+        Me.LblPuesto.Size = New System.Drawing.Size(43, 13)
         Me.LblPuesto.TabIndex = 12
         Me.LblPuesto.Text = "Puesto:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(280, 104)
+        Me.Label5.Location = New System.Drawing.Point(288, 105)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(129, 17)
+        Me.Label5.Size = New System.Drawing.Size(97, 13)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Correo Electronico:"
         '
@@ -132,7 +182,7 @@ Partial Class FrmCatalogoEmpleado
         Me.LblDomicilio.AutoSize = True
         Me.LblDomicilio.Location = New System.Drawing.Point(332, 66)
         Me.LblDomicilio.Name = "LblDomicilio"
-        Me.LblDomicilio.Size = New System.Drawing.Size(68, 17)
+        Me.LblDomicilio.Size = New System.Drawing.Size(52, 13)
         Me.LblDomicilio.TabIndex = 10
         Me.LblDomicilio.Text = "Domicilio:"
         '
@@ -141,7 +191,7 @@ Partial Class FrmCatalogoEmpleado
         Me.TxtApellidoMaternoEmpleado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtApellidoMaternoEmpleado.Location = New System.Drawing.Point(122, 71)
         Me.TxtApellidoMaternoEmpleado.Name = "TxtApellidoMaternoEmpleado"
-        Me.TxtApellidoMaternoEmpleado.Size = New System.Drawing.Size(150, 22)
+        Me.TxtApellidoMaternoEmpleado.Size = New System.Drawing.Size(150, 20)
         Me.TxtApellidoMaternoEmpleado.TabIndex = 3
         '
         'TxtDomicilioEmpleado
@@ -149,7 +199,7 @@ Partial Class FrmCatalogoEmpleado
         Me.TxtDomicilioEmpleado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtDomicilioEmpleado.Location = New System.Drawing.Point(406, 66)
         Me.TxtDomicilioEmpleado.Name = "TxtDomicilioEmpleado"
-        Me.TxtDomicilioEmpleado.Size = New System.Drawing.Size(263, 22)
+        Me.TxtDomicilioEmpleado.Size = New System.Drawing.Size(263, 20)
         Me.TxtDomicilioEmpleado.TabIndex = 4
         '
         'LblApellidoMaterno
@@ -157,7 +207,7 @@ Partial Class FrmCatalogoEmpleado
         Me.LblApellidoMaterno.AutoSize = True
         Me.LblApellidoMaterno.Location = New System.Drawing.Point(6, 74)
         Me.LblApellidoMaterno.Name = "LblApellidoMaterno"
-        Me.LblApellidoMaterno.Size = New System.Drawing.Size(118, 17)
+        Me.LblApellidoMaterno.Size = New System.Drawing.Size(89, 13)
         Me.LblApellidoMaterno.TabIndex = 4
         Me.LblApellidoMaterno.Text = "Apellido Materno:"
         '
@@ -166,7 +216,7 @@ Partial Class FrmCatalogoEmpleado
         Me.TxtApellidoPaternoEmpleado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtApellidoPaternoEmpleado.Location = New System.Drawing.Point(406, 30)
         Me.TxtApellidoPaternoEmpleado.Name = "TxtApellidoPaternoEmpleado"
-        Me.TxtApellidoPaternoEmpleado.Size = New System.Drawing.Size(150, 22)
+        Me.TxtApellidoPaternoEmpleado.Size = New System.Drawing.Size(150, 20)
         Me.TxtApellidoPaternoEmpleado.TabIndex = 2
         '
         'LblApellidoPaterno
@@ -174,7 +224,7 @@ Partial Class FrmCatalogoEmpleado
         Me.LblApellidoPaterno.AutoSize = True
         Me.LblApellidoPaterno.Location = New System.Drawing.Point(293, 33)
         Me.LblApellidoPaterno.Name = "LblApellidoPaterno"
-        Me.LblApellidoPaterno.Size = New System.Drawing.Size(116, 17)
+        Me.LblApellidoPaterno.Size = New System.Drawing.Size(87, 13)
         Me.LblApellidoPaterno.TabIndex = 2
         Me.LblApellidoPaterno.Text = "Apellido Paterno:"
         '
@@ -183,7 +233,7 @@ Partial Class FrmCatalogoEmpleado
         Me.LblTelefono.AutoSize = True
         Me.LblTelefono.Location = New System.Drawing.Point(48, 107)
         Me.LblTelefono.Name = "LblTelefono"
-        Me.LblTelefono.Size = New System.Drawing.Size(68, 17)
+        Me.LblTelefono.Size = New System.Drawing.Size(52, 13)
         Me.LblTelefono.TabIndex = 6
         Me.LblTelefono.Text = "Telefono:"
         '
@@ -192,7 +242,7 @@ Partial Class FrmCatalogoEmpleado
         Me.txtNombreEmpleado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNombreEmpleado.Location = New System.Drawing.Point(122, 33)
         Me.txtNombreEmpleado.Name = "txtNombreEmpleado"
-        Me.txtNombreEmpleado.Size = New System.Drawing.Size(150, 22)
+        Me.txtNombreEmpleado.Size = New System.Drawing.Size(150, 20)
         Me.txtNombreEmpleado.TabIndex = 1
         '
         'TxtTelefonoEmpleado
@@ -200,7 +250,7 @@ Partial Class FrmCatalogoEmpleado
         Me.TxtTelefonoEmpleado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtTelefonoEmpleado.Location = New System.Drawing.Point(122, 107)
         Me.TxtTelefonoEmpleado.Name = "TxtTelefonoEmpleado"
-        Me.TxtTelefonoEmpleado.Size = New System.Drawing.Size(150, 22)
+        Me.TxtTelefonoEmpleado.Size = New System.Drawing.Size(150, 20)
         Me.TxtTelefonoEmpleado.TabIndex = 5
         '
         'LblNombre
@@ -208,7 +258,7 @@ Partial Class FrmCatalogoEmpleado
         Me.LblNombre.AutoSize = True
         Me.LblNombre.Location = New System.Drawing.Point(54, 36)
         Me.LblNombre.Name = "LblNombre"
-        Me.LblNombre.Size = New System.Drawing.Size(62, 17)
+        Me.LblNombre.Size = New System.Drawing.Size(47, 13)
         Me.LblNombre.TabIndex = 0
         Me.LblNombre.Text = "Nombre:"
         '
@@ -229,7 +279,7 @@ Partial Class FrmCatalogoEmpleado
         Me.TxtBusquedaEmpleado.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TxtBusquedaEmpleado.Location = New System.Drawing.Point(151, 34)
         Me.TxtBusquedaEmpleado.Name = "TxtBusquedaEmpleado"
-        Me.TxtBusquedaEmpleado.Size = New System.Drawing.Size(547, 22)
+        Me.TxtBusquedaEmpleado.Size = New System.Drawing.Size(547, 20)
         Me.TxtBusquedaEmpleado.TabIndex = 11
         '
         'LblFiltroEmpleado
@@ -237,7 +287,7 @@ Partial Class FrmCatalogoEmpleado
         Me.LblFiltroEmpleado.AutoSize = True
         Me.LblFiltroEmpleado.Location = New System.Drawing.Point(104, 34)
         Me.LblFiltroEmpleado.Name = "LblFiltroEmpleado"
-        Me.LblFiltroEmpleado.Size = New System.Drawing.Size(43, 17)
+        Me.LblFiltroEmpleado.Size = New System.Drawing.Size(32, 13)
         Me.LblFiltroEmpleado.TabIndex = 10
         Me.LblFiltroEmpleado.Text = "Filtro:"
         '
@@ -247,13 +297,13 @@ Partial Class FrmCatalogoEmpleado
         Me.DgvEmpleados.AllowUserToDeleteRows = False
         Me.DgvEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.DgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvEmpleados.Location = New System.Drawing.Point(29, 70)
+        Me.DgvEmpleados.Location = New System.Drawing.Point(17, 70)
         Me.DgvEmpleados.MultiSelect = False
         Me.DgvEmpleados.Name = "DgvEmpleados"
         Me.DgvEmpleados.ReadOnly = True
         Me.DgvEmpleados.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
         Me.DgvEmpleados.RowTemplate.Height = 24
-        Me.DgvEmpleados.Size = New System.Drawing.Size(669, 162)
+        Me.DgvEmpleados.Size = New System.Drawing.Size(681, 162)
         Me.DgvEmpleados.TabIndex = 0
         '
         'BtnNuevoEmpleado
@@ -278,44 +328,13 @@ Partial Class FrmCatalogoEmpleado
         '
         Me.TxtIdEmpleado.Location = New System.Drawing.Point(503, 485)
         Me.TxtIdEmpleado.Name = "TxtIdEmpleado"
-        Me.TxtIdEmpleado.Size = New System.Drawing.Size(224, 22)
+        Me.TxtIdEmpleado.Size = New System.Drawing.Size(224, 20)
         Me.TxtIdEmpleado.TabIndex = 4
         Me.TxtIdEmpleado.Visible = False
         '
-        'TextBox1
+        'OfdImagenesCliente
         '
-        Me.TextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBox1.Location = New System.Drawing.Point(406, 130)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(103, 22)
-        Me.TextBox1.TabIndex = 7
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(339, 133)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(61, 17)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Usuario:"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBox2.Location = New System.Drawing.Point(406, 159)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(103, 22)
-        Me.TextBox2.TabIndex = 8
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(327, 164)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 17)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Password:"
+        Me.OfdImagenesCliente.FileName = "OfdImagenes"
         '
         'FrmCatalogoEmpleado
         '
@@ -330,6 +349,7 @@ Partial Class FrmCatalogoEmpleado
         Me.Text = "Catalogo de Empleado"
         Me.GbEmpleado.ResumeLayout(False)
         Me.GbEmpleado.PerformLayout()
+        CType(Me.PbClienteNuevo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GbBusquedaEmpleado.ResumeLayout(False)
         Me.GbBusquedaEmpleado.PerformLayout()
         CType(Me.DgvEmpleados, System.ComponentModel.ISupportInitialize).EndInit()
@@ -382,4 +402,6 @@ Partial Class FrmCatalogoEmpleado
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents PbClienteNuevo As PictureBox
+    Friend WithEvents OfdImagenesCliente As OpenFileDialog
 End Class

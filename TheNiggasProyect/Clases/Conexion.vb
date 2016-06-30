@@ -116,17 +116,17 @@ Public Class Conexion
         End Set
     End Property
     Public Sub New()
-        Me.nombreBD = "nigga"
+        Me.nombreBD = "gimnasio"
         Me.servidor = "localhost"
         Me.usuario = "root"
-        Me.password = "root"
+        Me.password = "c1r7g4s"
         MysqlConexion.ConnectionString = "server=" & servidor & ";database=" & nombreBD & ";user id=" & usuario & "; password=" & password & ";"
     End Sub
 
     Public Sub abrirBD()
         Try
             Me.MysqlConexion.Open()
-            MsgBox("conexion exitosa!")
+            'MsgBox("conexion exitosa!")
         Catch
             MsgBox("fallo en la conexion")
         End Try
@@ -135,7 +135,7 @@ Public Class Conexion
     Public Sub cerrarBd()
         Try
             Me.MysqlConexion.Close()
-            MsgBox("se ha desconectado de la bd")
+            'MsgBox("se ha desconectado de la bd")
         Catch
             MsgBox("fallo al momento de desconectar la bd")
         End Try
